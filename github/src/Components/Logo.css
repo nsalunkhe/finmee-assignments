@@ -1,0 +1,272 @@
+.container {
+    width: 100%;
+    height: 1000px;
+    background-image: url('https://www.aiconsultinggroup.com.au/wp-content/uploads/2022/05/Analytics-and-Business-Intelligence-Platform-8.png');
+    background-size: cover;
+    background-position: top;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .navbar {
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0; /* Stick to the top */
+    z-index: 100;
+  }
+
+  
+  .navbar img {
+    width: auto;
+    height: 70%;
+  }
+  
+  .nav {
+    width: 60%;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    margin-top: 50px;
+    right: 0;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    display: none;
+  }
+  .navbar.scrolling {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow when scrolling */
+  }
+.scrolling .nav-1 button{
+    color: black;
+}
+.scrolling .nav-1 button:hover{
+    color: black;
+    text-decoration:underline;
+}
+
+.scrolling{
+    width: 100%;
+    padding-left: 5%;
+    padding-right:5%;
+
+}
+  .nav-1 {
+    width: 60%;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+  }
+  
+  .nav-1 button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color:#444649;
+
+  }
+  
+  .nav-1 button {
+    font-size: x-large;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-weight: 400;
+    padding: 5px;
+  }
+  
+  .nav.show {
+    display: flex;
+  }
+  
+  .nav button {
+    font-size: x-large;
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-weight: 400;
+    padding: 5px;
+  }
+
+  
+  .nav button:hover {
+    cursor: pointer;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    display: none;
+  }
+  
+  .menu-icon svg {
+    transition: 0.4s;
+  }
+  
+  .menu-icon:hover svg {
+    transform: scale(1.1);
+  }
+  
+  .bar:nth-child(1) {
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  
+  .bar:nth-child(2) {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  
+  .bar:nth-child(3) {
+    width: 15px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+  
+  .menu-open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    background-color: black;
+  }
+  
+  .menu-open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+    background-color: black;
+  }
+
+  
+  .one{
+    width: 90%;
+    margin: auto;
+    height:700px;
+    margin-top: 50px;
+    display:flex;
+  }
+  .subOne{
+    width:50%;
+    text-align: start;
+  }
+  .subOne h1{
+    width:100%;
+    margin-top: 200px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .subOne button{
+   margin-top: 20px;   
+   padding-right:70px;
+   padding-left:70px ; 
+   font-size: 20px;
+  }
+  .subTwo{
+    width:50%;
+    padding-top: 50px;
+  }
+
+
+
+  @media (max-width: 1300px) {
+    .nav button {
+      font-size: small;
+    }
+    .nav-1 button {
+      font-size: medium;
+    }
+  }
+  
+ 
+  
+ @media(max-width:1230px){
+    .subOne h1{
+        color: white;
+        font-size:30px;
+      }
+ }
+ 
+ @media (max-width: 1024px) {
+    .nav button {
+      font-size: x-large;
+    }
+    .nav {
+      width: 100%;
+      top: 70px;
+      justify-content: flex-start;
+      padding-bottom:100px;
+    }
+  
+    .menu-icon {
+      display: flex;
+
+    }
+    .nav button {
+      text-align: start;
+      margin-left: 100px;
+      width: 50%;
+    }
+    .nav-1 {
+      display: none;
+    }
+    .navbar {
+      padding: 0;
+      margin: 0;
+      color: black;
+      width: 100%;
+    }
+    .menu-icon{
+        margin-right: 50px;
+    }
+    .subTwo{
+        padding-top: 80px;
+      }
+  }
+
+@media(max-width:830px){
+    .one{
+        display: block;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .menu-icon{
+        margin-right: 50px;
+    }
+    .subOne{
+        width:100%;
+    }
+    .subOne button{
+        padding-right:30px;
+        padding-left:30px ; 
+    }
+    .subTwo{
+        width:60%;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    .subTwo img{
+        width: 100%;
+        height:50%;
+
+    }
+}
+@media(max-width:391px){
+    .subOne h1{
+        font-size: 20px;
+        margin-top: 150px;
+    }
+}

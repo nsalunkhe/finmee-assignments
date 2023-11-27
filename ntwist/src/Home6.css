@@ -1,0 +1,34 @@
+.sec6{
+    background-color: #0D1117;
+    width:100%;
+    height:800px;
+}
+.sec6-1{
+    width:80%;
+    height:800px;
+    border-left: 5px solid #029C97;
+    margin-left: 90px;
+    text-align: start;
+    padding-left:10px ;
+    padding-top: 3%;
+}
+.sec6-2{
+    width:50%;
+    height:30%;
+    margin-left: 7%;
+}
+.sec6-2 h1{
+    color:gray;
+    font-weight: 400;
+}
+.sec6-3{
+    display: flex;
+}
+.sec6-4{
+    width:50%;
+}
+.sec6-4 h1{
+    font-size: 90px;
+    color:#029C97;
+    font-weight: 400;
+}
