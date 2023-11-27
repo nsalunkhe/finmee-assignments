@@ -11,6 +11,10 @@ import Home5 from './Home5';
 import Home6 from './Home6';
 import Home7 from './Home7';
 import Home8 from './Home8';
+import Home9 from './Home9';
+import Home10 from './Home10';
+import Home11 from './Home11';
+import Footer1 from './Footer1';
 const Home = () => {
   return (
     <>
@@ -62,6 +66,10 @@ const Home = () => {
     <Home6/>
     <Home7/>
     <Home8/>
+    <Home9/>
+    <Home10/>
+    <Home11/>
+    <Footer1/>
     </>
   )
 }
